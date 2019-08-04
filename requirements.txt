@@ -1,6 +1,6 @@
 -i https://pypi.python.org/simple
-boto3==1.7.4
-botocore==1.10.84
+boto3>=1.9
+botocore>=1.12
 click==7.0
 docutils==0.14
 flask>=1.1.0
@@ -9,6 +9,6 @@ jinja2==2.10.1
 jmespath==0.9.4
 markupsafe==1.1.1
 python-dateutil==2.8.0 ; python_version >= '2.7'
-s3transfer==0.1.13
+s3transfer>=0.2
 six==1.12.0
 werkzeug==0.15.5
