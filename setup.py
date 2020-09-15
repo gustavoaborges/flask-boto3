@@ -7,7 +7,10 @@ from setuptools import setup
 
 # Requirements
 install_reqs = parse_requirements('requirements.txt', session='dummy')
-reqs = [str(ir.req) for ir in install_reqs]
+try:
+    reqs = [str(ir.req) for ir in install_reqs]
+except:
+    reqs = [str(ir.requirement) for ir in install_reqs]
 
 setup(
     name='Flask-Boto3',
